@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    // どのバージョンでjsを出力するか。
+    "target": "es5",
+    // コンパイルする際に使用する組み込みライブラリを指定する。
+    "lib": ["dom", "dom.iterable", "esnext"],
+    // これをtrueにしておくと、.jsと.jsxもコンパイル対象に含まれるようになる。
+    "allowJs": false,
+    // 暗黙的にanyになる値をエラーにする。
+    "noImplicitAny": true,
+    // 使われているthisの型が暗黙的にanyになる場合にエラーにする。
+    "noImplicitThis": true,
+    // "use strict";を必ず全てのファイルの先頭行に付与する。
+    "alwaysStrict": true,
+    // bind, call, applyを使用する際に、より厳密に型チェックが行われるようになる。
+    "strictBindCallApply": true,
+    // Nullableな値に対してオプションの呼び出しを行う記述をエラーにする。
+    "strictNullChecks": true,
+    // import時にファイルパスの文字列で大文字小文字を区別するかどうかを指定する。
+    "forceConsistentCasingInFileNames": true,
+    // 出力するjsのモジュールの仕組みとして何を使用するかを指定する。
+    "module": "esnext",
+    // tscのモジュール解決の方法を指定する。
+    "moduleResolution": "node",
+    // non-relativeなimportにおいて、相対的なカレントディレクトリをどこにするか指定する。
+    "baseUrl": "src",
+  },
+  // コンパイルする対象ファイルを記述する。
+  "include": ["src/**/*"]
+}
